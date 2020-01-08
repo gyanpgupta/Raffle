@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Jack
+  email: jack@test.com
+  prize: watch
+
+two:
+  name: Jill
+  email: jill@test.com
+  prize: luxury_dinner
+
+three: 
+  name:  knight
+  email: knight@test.com
+  prize: luxury_dinner
