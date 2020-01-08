@@ -19,6 +19,13 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to user_url(User.last)
   end
 
+  test "should not create user without name, email and prize" do
+    assert_no_difference('User.count') do
+      post users_url, params: { user: { email: nil, name: nil, prize: nil } }
+    end
+    assert_response :success
+  end
+
   test "should show user" do
     get user_url(users(:one))
     assert_response :success
